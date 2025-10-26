@@ -15,4 +15,5 @@ jobs:
             - name: Run tests
               run: npm test
             - name: Show Git info
-              run: echo ${{toJson(github)}}
+              run: |
+                  echo "${{ toJson(github) }}"
